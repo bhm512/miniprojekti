@@ -9,6 +9,16 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 - Yhden lauseen selitys = Määrittää toimiva ja turvallinen UFW- palomuuri idempotentin tilan avulla (Salt).
 
+  Jos haluaa ajaa kyseisen homman, niin täytyy lisätä /Miniprojekti/ kansioon top.sls ja sinne:
+
+<img width="128" height="56" alt="Näyttökuva 2025-12-01 kello 18 34 37" src="https://github.com/user-attachments/assets/5de32b27-b52a-4aa3-9720-02426b5ec9f3" />
+ 
+
+Sitten komento sen mukaan mihin ikinä latasitkaan kansion:
+
+  $ sudo salt-call --local --file-root=/home/käyttäjä/miniprojekti state.apply
+
+  
 ### Vaiheet
 
 - Ensiksi luotiin uusi repo projektille githubiin, josta kloonattiin tämä debian virtuaalikoneelle. 
@@ -41,9 +51,8 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 <img width="515" height="210" alt="Näyttökuva 2025-12-01 kello 17 44 39" src="https://github.com/user-attachments/assets/983a9ee2-ce5d-42c4-b208-2cf6d56ac539" />
 
+Toimii!
 
-
-Projektin pitäisi nyt toimia!
 
 ### Lähteet
 
