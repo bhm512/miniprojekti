@@ -9,7 +9,35 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 - Yhden lauseen selitys = Määrittää toimiva ja turvallinen UFW- palomuuri idempotentin tilan avulla (Salt).
 
+### Vaiheet
+
+- Ensiksi luotiin uusi respo projektille githubiin, josta kloonattiin tämä debian virtuaalikoneelle. 
+
+- Seuraavaksi luotiin kansio salt tiloille (mkdir firewall)
+
+- Tässä kansiorakenne
+  <img width="398" height="153" alt="Näyttökuva 2025-12-01 kello 17 22 20" src="https://github.com/user-attachments/assets/6e9c5f5c-29ca-4fe9-b670-955987e657ab" />
+
+
+- Tämän jälkeen kirjoitimme idempotentin Salt-tilan UFW-palomuuriin.
+
+  <img width="601" height="607" alt="Näyttökuva 2025-12-01 kello 17 30 42" src="https://github.com/user-attachments/assets/abbde6f2-d900-45fa-a52a-836a51b18d2d" />
+
+  Selitykset tilakomennoista:
+
+  - 1. komento = pkg.installed = varmistaa että paketti on asennettu
+    2. Toinen kappalle suorittaa komennon (pitää lukea deny-incoming, jotta se toimii)
+    3. Sallii portin 22, jos ei ole jo sallittu
+    4. Sallii portin 80, jos ei ole jo sallittu
+    5. Alin kappale ottaa UFW:n käyttöön, jos ei ole jo.
+   
+-> Tämän jälkeen: sudo salt-call --local state.apply firewall
   
+<img width="1466" height="765" alt="Näyttökuva 2025-12-01 kello 17 40 56" src="https://github.com/user-attachments/assets/197ed13c-ded0-4ce0-8a8a-5398f82cd442" />
 
+<img width="1470" height="648" alt="Näyttökuva 2025-12-01 kello 17 41 29" src="https://github.com/user-attachments/assets/01f69669-42c2-4718-8945-b590d2c4e73b" />
 
+ -> varmistin palomuurin toiminnan 
+
+<img width="515" height="210" alt="Näyttökuva 2025-12-01 kello 17 44 39" src="https://github.com/user-attachments/assets/983a9ee2-ce5d-42c4-b208-2cf6d56ac539" />
 
