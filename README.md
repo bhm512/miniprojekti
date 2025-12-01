@@ -41,3 +41,11 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 <img width="515" height="210" alt="Näyttökuva 2025-12-01 kello 17 44 39" src="https://github.com/user-attachments/assets/983a9ee2-ce5d-42c4-b208-2cf6d56ac539" />
 
+
+
+Projektin pitäisi nyt toimia!
+
+### Lähteet
+
+- https://docs.saltproject.io/en/latest/contents.html
+- https://help.ubuntu.com/community/UFW
