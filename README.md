@@ -11,7 +11,7 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 ### Vaiheet
 
-- Ensiksi luotiin uusi respo projektille githubiin, josta kloonattiin tämä debian virtuaalikoneelle. 
+- Ensiksi luotiin uusi repo projektille githubiin, josta kloonattiin tämä debian virtuaalikoneelle. 
 
 - Seuraavaksi luotiin kansio salt tiloille (mkdir firewall)
 
