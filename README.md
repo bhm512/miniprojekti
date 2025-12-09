@@ -81,4 +81,4 @@ Toimii!
 - https://wiki.debian.org/UncomplicatedFirewall
 - https://terokarvinen.com/palvelinten-hallinta/
 - https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/?fromSearch=salt%20quickstart%20salt%20stack%20master%20and%20slave%20on%20ubuntu%20linux
-- 
+
