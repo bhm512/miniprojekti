@@ -20,8 +20,6 @@ cd miniprojekti
 
 Luo top.sls 
 
-(Se screenshot mikä siinä on nytkin)
-
 Base:
   ‘*’ :
 firewall
