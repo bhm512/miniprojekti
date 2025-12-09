@@ -9,8 +9,6 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 - Yhden lauseen selitys = Määrittää toimiva ja turvallinen UFW- palomuuri idempotentin tilan avulla (Salt).
 
-
-<img width="128" height="56" alt="Näyttökuva 2025-12-01 kello 18 34 37" src="https://github.com/user-attachments/assets/5de32b27-b52a-4aa3-9720-02426b5ec9f3" />
  
 1. Kloonaa repositorio
 
@@ -19,9 +17,7 @@ cd miniprojekti
 
 2. Luo top.sls 
 
-Base:
-  ‘*’ :
-firewall
+<img width="128" height="56" alt="Näyttökuva 2025-12-01 kello 18 34 37" src="https://github.com/user-attachments/assets/5de32b27-b52a-4aa3-9720-02426b5ec9f3" />
 
 3.  Lisää projektihakemisto Saltin Minion tiedostoon  /etc/salt/minion
 
