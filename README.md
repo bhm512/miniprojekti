@@ -13,10 +13,30 @@ Tavoitteena oli hyödyntää kurssilla opittuja asioita kuten: modernia keskitet
 
 <img width="128" height="56" alt="Näyttökuva 2025-12-01 kello 18 34 37" src="https://github.com/user-attachments/assets/5de32b27-b52a-4aa3-9720-02426b5ec9f3" />
  
+Kloonaa repositorio
 
-Sitten komento sen mukaan mihin ikinä latasitkaan kansion:
+git clone https://github.com/bhm512/miniprojekti
+cd miniprojekti
 
-  $ sudo salt-call --local --file-root=/home/käyttäjä/miniprojekti state.apply
+Luo top.sls 
+
+(Se screenshot mikä siinä on nytkin)
+
+Base:
+  ‘*’ :
+firewall
+
+3.  Lisää projektihakemisto Saltin Minion tiedostoon  /etc/salt/minion
+
+file_roots:
+  base:
+    - /polku/tähän/repositorioon
+
+4. Aja salt-tila
+
+sudo salt-call --local state.apply
+
+
 
   
 ### Vaiheet
